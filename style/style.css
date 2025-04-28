@@ -1,3 +1,7 @@
+/*!
+ * SECTION Font Faces
+ * Define todas las fuentes personalizadas usadas en el proyecto
+ */
 @font-face {
     font-family: "bold";
     src: url(../fonts/OpenSans-Bold.ttf);
@@ -39,6 +43,25 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
+/*!
+ * SECTION Background Styles
+ * Estilos para el fondo y la imagen de fondo
+ */
+.head{
+    width: 15%;
+    max-width: 480px;
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    z-index: 10;
+}
+.sun{
+    width: 25%;
+    max-width: 480px;
+    position: relative;
+    top: -40%;
+    left: 0%;
+}
 .fondo1{
     width: 100%;
     height: 100%;
@@ -53,7 +76,10 @@ body{
     border-radius: 10px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
 }
-
+/*!
+ * SECTION Button Styles
+ * Estilos para los botones principales y sus estados
+ */
 a.boton1 {
     color: black;
     margin: 0px 10px;
@@ -78,8 +104,7 @@ a.boton1 {
 a.boton1:hover {
     background-color: #e0b6ff;
     color: #502370;
-    padding-bottom: -8px;
-    position: absolute
+    position: relative;
 }
 a.boton2 {
     color: black;
@@ -102,11 +127,10 @@ a.boton2 {
     
 }
 
-a.boton1:hover {
+a.boton2:hover {
     background-color: #e0b6ff;
     color: #502370;
-    padding-bottom: -8px;
-    position: absolute
+    position: relative;
 }
 a.boton3 {
     color: black;
@@ -132,10 +156,24 @@ a.boton3 {
 a.boton3:hover {
     background-color: #e0b6ff;
     color: #502370;
-    padding-bottom: -8px;
-    position: absolute
+    position: relative;
 }
-
+/*!
+ * STATE Active Button
+ * Estilo para el estado activo de los botones
+ */
+a.active {
+    background-color: #e0b6ff;
+    color: #502370;
+}
+a.active:hover {
+    background-color: #e0b6ff;
+    color: #502370;
+}
+/*!
+ * MEDIA QUERY Mobile Fallback
+ * Oculta el contenido en pantallas mayores a 480px
+ */
 @media (min-width: 480px) {
     body {
         display: none;

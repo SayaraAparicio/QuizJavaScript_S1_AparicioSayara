@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "extra-bold";
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+
+@font-face {
+    font-family: "semi-ex-bold";
+    src: url(../fonts/OpenSans_SemiCondensed-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "semi-bold";
+    src: url(../fonts/OpenSans_SemiCondensed-SemiBold.ttf);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'semi-bold';
+    background-color: #f6edff;
+    text-align: center;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #f6edff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.fondo1{
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    position: absolute;
+    top: -8%;
+
+}
+.imgfondo{
+    width: 111%;
+    max-width: 480px;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+a.boton {
+    color: black;
+    margin: 5px 10px;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-family: 'Arial';
+    font-weight: 600;
+    font-size: 3vw;
+    background-color: #ffffff;
+    border-radius: 10px;
+    
+}
+
+a.boton:hover {
+    border-bottom: 2px solid #ce9e5a;
+    padding-bottom: -8px;
+    position: relative;
+}
+
+@media (min-width: 480px) {
+    body {
+        display: none;
+    }
+}
